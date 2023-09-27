@@ -1,10 +1,11 @@
 import "./App.css";
-import { Example } from "./components/Example/Example";
+import GetURLInput from "./components/GetURLInput/GetURLInput";
 
 function App() {
   return (
     <>
-      <Example />{" "}
+      Vite
+       <GetURLInput />
     </>
   );
 }
