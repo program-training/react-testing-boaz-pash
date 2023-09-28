@@ -26,7 +26,12 @@ const GetURLInput: FC = () => {
       <form onSubmit={handleSubmit}>
         <label>
           Enter a URL
-          <input type="text" name="url" onChange={handleInputChange}></input>
+          <input
+            role="input"
+            type="text"
+            name="url"
+            onChange={handleInputChange}
+          ></input>
         </label>
         <label>
           Enter a size

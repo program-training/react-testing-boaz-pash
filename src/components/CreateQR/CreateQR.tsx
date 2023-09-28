@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-interface Props {
+export interface Props {
   details: {
     QRUrl: string;
     size: number;
@@ -18,7 +18,7 @@ const CreateQrCode: FC<Props> = ({ details }) => {
   }
   return (
     <>
-      <img
+      <img role="img"
         src={`https://api.qrserver.com/v1/create-qr-code/?data=${details.QRUrl}
       &size=${details.size}*${details.size}`}
       ></img>
